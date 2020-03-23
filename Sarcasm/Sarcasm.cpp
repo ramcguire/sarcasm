@@ -23,7 +23,7 @@ LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
                 uppercaseHelper.ki.wVk = VK_SHIFT;
                 INPUT input;
                 input.type = INPUT_KEYBOARD;
-                input.ki.wVk = p->vkCode;
+                input.ki.wVk = (WORD)p->vkCode;
                 input.ki.time = 0; // let system provide timestamp
                 // keydown event
                 if ((wParam == WM_KEYDOWN) || (wParam == WM_SYSKEYDOWN)) {
