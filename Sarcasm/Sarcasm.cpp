@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <Windows.h>
-#define _WIN32_WINNT 0x050
 
 
 LRESULT CALLBACK LowLevelKeyboardProc(int nCode, WPARAM wParam, LPARAM lParam) {
